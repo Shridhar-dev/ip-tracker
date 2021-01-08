@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <title>IP Address Tracker</title>
+
+  <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+  <div class="header">
+    <h2>IP Address Tracker</h2>
+    <div class="main">
+      <input id="inputer" placeholder="Search for an IP address or domain" />
+      <div id="search_button">
+        <img src="./images/icon-arrow.svg" />
+      </div>
+    </div>
+    <div class="data-display">
+      <div class="item">
+        <small>IP ADDRESS</small>
+        <h3 id="ipa">192.212.174.101</h3>
+      </div>
+      <hr/>
+      <div class="item">
+        <small>LOCATION</small>
+        <h3 id="loc">192.212.174.101</h3>
+      </div>
+      <hr/>
+      <div class="item">
+        <small>TIMEZONE</small>
+        <h3 id="timez">192.212.174.101</h3>
+      </div>
+      <hr/>
+      <div class="item">
+        <small>ISP</small>
+        <h3 id="isp">192.212.174.101</h3>
+      </div>
+    </div>
+  </div>
+  <div id="mapid" style="z-index: 0;"></div>
+  <script type='text/javascript' src='config.js'></script>
+  <script src="index.js"></script>
+</body>
+</html>
